@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <CheckBox
+            android:id="@+id/cbChocolate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_lr_checkbox"
+            android:layout_marginTop="@dimen/margin_top_checkbox"
+            android:text="@string/chocolate_syrup"
+            android:buttonTint="@color/pink"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbSprinkles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_lr_checkbox"
+            android:layout_marginTop="@dimen/margin_top_checkbox1"
+            android:buttonTint="@color/pink"
+            android:text="@string/sprinkles"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbChocolate" />
+
+        <CheckBox
+            android:id="@+id/cbCrushedNuts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crushed_nuts"
+            android:buttonTint="@color/pink"
+            android:layout_marginStart="@dimen/margin_lr_checkbox"
+            android:layout_marginTop="@dimen/margin_top_checkbox1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbSprinkles" />
+
+        <CheckBox
+            android:id="@+id/cbCherries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cherries"
+            android:buttonTint="@color/pink"
+            android:layout_marginStart="@dimen/margin_lr_checkbox"
+            android:layout_marginTop="@dimen/margin_top_checkbox1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbCrushedNuts" />
+
+        <CheckBox
+            android:id="@+id/cbOrio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/pink"
+            android:text="@string/orio_cookie_crumbles"
+            android:layout_marginStart="@dimen/margin_lr_checkbox"
+            android:layout_marginTop="@dimen/margin_top_checkbox1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbCherries" />
+
+        <Button
+            android:id="@+id/btnShowToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_lr_checkbox"
+            android:layout_marginTop="@dimen/margin_top_checkbox"
+            android:text="@string/show_toast"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbOrio"
+            android:onClick="showToast"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
